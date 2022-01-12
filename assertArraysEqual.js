@@ -13,10 +13,10 @@ const assertArraysEqual = function (arr1, arr2) {
     for (let i = 0; i < arr1.length; i++) {
       result = assertEqual(arr1[i], arr2[i]);
       if (result === false) {
-        output = `Assertion Failed: ${arr1} !== ${arr2}`;
+        output = `Assertion Failed`;
         break;
       } else {
-        output = `Assertion Passed: ${arr1} === ${arr2}`;
+        output = `Assertion Passed`;
       }
     }
     console.log(output);
