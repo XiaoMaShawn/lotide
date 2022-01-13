@@ -13,7 +13,7 @@ const eqObjects = function (object1, object2) {
   let object1Name = Object.keys(object1);
   let object2Name = Object.keys(object2);
   let output;
-  if (object1Name.length == object2Name.length) {
+  if (object1Name.length === object2Name.length) {
     for (let k in object1) {
       if (!object2[k]) {
         output = false;
@@ -31,7 +31,7 @@ const eqObjects = function (object1, object2) {
   return output;
 }
 
-const ab = { a: "1", b: "2" };
+const ab = { a: "1", b: "2" };//{a: 1, b: '2', z: 3} {c: 2, d: 5, b: 4}
 const ba = { b: "2", a: "1" };
 console.log(eqObjects(ab, ba)); // => true
 
