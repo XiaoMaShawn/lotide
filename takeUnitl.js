@@ -27,7 +27,6 @@ const assertArraysEqual = function (arr1, arr2) {
 const takeUntil = function (array, callback) {
   // ...
   let output = [];
-  // array.forEach((x) => { callback(x) ? break : ouput.push(x) })
   for (let i = 0; i < array.length; i++) {
     if (!callback(array[i])) {
       output.push(array[i]);
