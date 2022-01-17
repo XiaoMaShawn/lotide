@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@shawnxm/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a mini version of lodash",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/XiaoMaShawn/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "{name:Xiao Ma, email:ma2014xiao@gmail.com}",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/XiaoMaShawn/lotide/issues"
