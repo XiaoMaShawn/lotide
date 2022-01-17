@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return true;
   } else {
@@ -9,7 +9,7 @@ const assertEqual = function (actual, expected) {
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   let object1Name = Object.keys(object1);
   let object2Name = Object.keys(object2);
   let output;
@@ -37,3 +37,5 @@ console.log(eqObjects(ab, ba)); // => true
 
 const abc = { a: "1", b: "2", c: "3" };
 console.log(eqObjects(ab, abc)); // => false
+
+module.exports = eqObjects;

@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return true;
   } else {
@@ -6,7 +6,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const findKey = function (obj, callback) {
+const findKey = function(obj, callback) {
   let result = '';
   let keysArray = Object.keys(obj);
   //loop through the value of obj.properties
@@ -19,6 +19,8 @@ const findKey = function (obj, callback) {
   }
   return result;
 }
+
+module.exports = findKey;
 
 console.log(findKey({
   "Blue Hill": { stars: 1 },

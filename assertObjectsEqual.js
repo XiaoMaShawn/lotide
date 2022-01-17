@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return true;
   } else {
@@ -7,7 +7,7 @@ const assertEqual = function (actual, expected) {
 };
 
 
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   let object1Name = Object.keys(object1);
   let object2Name = Object.keys(object2);
   let output;
@@ -30,7 +30,7 @@ const eqObjects = function (object1, object2) {
 }
 
 // FUNCTION IMPLEMENTATION
-const assertObjectsEqual = function (actual, expected) {
+const assertObjectsEqual = function(actual, expected) {
   // Implement me!
   const inspect = require('util').inspect; // <= add this line
   if (eqObjects(actual, expected)) {
@@ -40,5 +40,6 @@ const assertObjectsEqual = function (actual, expected) {
   }
 };
 
+module.exports = assertObjectsEqual;
 assertObjectsEqual({ a: '1', b: 2 }, { b: 2, a: '1' });
 assertObjectsEqual({ a: '1', b: 2 }, { b: 3, a: '1' });

@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return true;
   } else {
@@ -6,7 +6,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   let result;
   let output;
   if (arr1.length === arr2.length) {
@@ -23,7 +23,7 @@ const eqArrays = function (arr1, arr2) {
   }
 }
 
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   let result;
   let output;
   if (arr1.length === arr2.length) {
@@ -40,7 +40,7 @@ const assertArraysEqual = function (arr1, arr2) {
   }
 }
 
-const without = function (source, itemsToRemove) {
+const without = function(source, itemsToRemove) {
   // let output = [];
   // for (let item of itemsToRemove) {
   //   for (let i = 0; i < source.length; i++) {
@@ -64,6 +64,8 @@ const without = function (source, itemsToRemove) {
   return output;
 }
 // console.log(output);
+
+module.exports = without;
 
 console.log(without([1, 2, 3], [1])); // => [2, 3]
 console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]

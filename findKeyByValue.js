@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -6,7 +6,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const findKeyByValue = function (obj, str) {
+const findKeyByValue = function(obj, str) {
   let result = '';
   let keysArray = Object.keys(obj);
   //loop through the value of obj.properties
@@ -24,6 +24,8 @@ const bestTVShowsByGenre = {
   comdedy: "Brooklyn Nine-Nine",
   drama: "The Wire"
 }
+
+module.exports = findKeyByValue;
 
 console.log(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"));
 console.log(findKeyByValue(bestTVShowsByGenre, "The Expanse"));

@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return true;
   } else {
@@ -6,7 +6,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   let result;
   let output;
   if (arr1.length === arr2.length) {
@@ -24,7 +24,7 @@ const assertArraysEqual = function (arr1, arr2) {
 }
 
 
-const letterPositions = function (sentence) {
+const letterPositions = function(sentence) {
   const results = {};
   // logic to update results here
   // loop through the sentence
@@ -41,4 +41,5 @@ const letterPositions = function (sentence) {
   return results;
 };
 
+module.exports = letterPositions;
 // console.log(letterPositions('lighthouse in the house'));

@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return true;
   } else {
@@ -6,7 +6,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   let result;
   let output;
   if (arr1.length === arr2.length) {
@@ -27,13 +27,15 @@ const assertArraysEqual = function (arr1, arr2) {
 
 const words = ["ground", "control", "to", "major", "tom"];
 
-const map = function (array, callback) {
+const map = function(array, callback) {
   const results = [];
   for (let item of array) {
     results.push(callback(item));
   }
   return results;
 }
+
+module.exports = map;
 
 const results1 = map(words, word => word[0]);
 console.log(results1);
