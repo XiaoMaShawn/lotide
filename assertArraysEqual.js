@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return true;
   } else {
@@ -6,7 +6,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   let result;
   let output;
   if (arr1.length === arr2.length) {
@@ -23,8 +23,4 @@ const assertArraysEqual = function (arr1, arr2) {
   }
 }
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]) // => true
-assertArraysEqual([1, 2, 3], [3, 2, 1]) // => false
-
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]) // => true
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3]) // => false
+module.exports = assertArraysEqual;
